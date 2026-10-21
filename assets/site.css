@@ -926,3 +926,20 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
 @media (max-width:340px){
   .logo-text{display:none}
 }
+/* ───── منوی موبایل و کشو بدون سرریز افقی ───── */
+.mobile-menu{
+  transform:none;visibility:hidden;clip-path:inset(0 0 0 100%);
+  transition:clip-path .45s var(--ease),visibility 0s .45s;
+}
+.mobile-menu.open{
+  visibility:visible;clip-path:inset(0 0 0 -60px);
+  transition:clip-path .45s var(--ease),visibility 0s;
+}
+.drawer{
+  transform:none;visibility:hidden;clip-path:inset(0 100% 0 0);
+  transition:clip-path .45s var(--ease),visibility 0s .45s;
+}
+.drawer.open{
+  transform:none!important;visibility:visible;clip-path:inset(0 -60px 0 0);
+  transition:clip-path .45s var(--ease),visibility 0s;
+}
