@@ -5,6 +5,6 @@
  * پس از اولین ورود، رمز را از پنل مدیریت > تغییر رمز عبور عوض کنید.
  */
 const INITIAL_ADMIN_USER = 'persiansec';
-const INITIAL_ADMIN_PASS = '123456789';   // ← حتماً یک رمز قوی (حداقل ۱۰ کاراکتر) اینجا بنویسید
+const INITIAL_ADMIN_PASS = '';   // ← حتماً یک رمز قوی (حداقل ۱۰ کاراکتر) اینجا بنویسید
 
 const DEBUG = false;             // فقط هنگام عیب‌یابی true کنید
