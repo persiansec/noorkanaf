@@ -907,3 +907,10 @@ footer::before{
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
 .drawer-foot .field{margin-bottom:10px}
 .drawer-foot .field input{width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--border);background:var(--surface)}
+/* ───── رفع مشکلات ریسپانسیو ───── */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
+.modal-card{max-height:88vh}
+@supports (height:1dvh){.modal-card{max-height:88dvh}}
+@media (max-width:640px){
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
