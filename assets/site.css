@@ -914,3 +914,15 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-x:hidden}
 @media (max-width:640px){
   .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+/* ───── هدر در موبایل ───── */
+@media (max-width:640px){
+  .nav{gap:8px}
+  .logo{min-width:0;flex-shrink:1;gap:8px;font-size:1.05rem}
+  .logo-mark{width:34px;height:34px;font-size:.95rem}
+  .logo-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+  .nav-actions{gap:2px}
+  .icon-btn{width:38px;height:38px}
+}
+@media (max-width:340px){
+  .logo-text{display:none}
+}
